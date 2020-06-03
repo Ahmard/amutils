@@ -54,4 +54,11 @@ class ConsoleHelper
         echo "\n";
         return $this;
     }
+    
+    
+    public function tab()
+    {
+        echo "\t";
+        return $this;
+    }
 }
