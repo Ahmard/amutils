@@ -29,18 +29,30 @@ composer update
 ## Usage
 - Extract download link from https://fzmovies.net
 ```php
-php appent link:fzmovies "https://fzmovies.net/movie-The%20Forbidden%20Kingdom--hmp4.htm"
+php ape link:fzmovies "https://fzmovies.net/movie-The%20Forbidden%20Kingdom--hmp4.htm"
 ```
 
 - Extract download link from https://feurl.com
 ```php
-php appent link:feurl "https://feurl.com/v/zyvnx8yk8o1"
+php ape link:feurl "https://feurl.com/v/zyvnx8yk8o1"
 ```
 
 - Download remote file
 ```php
-php appent import https://google.com
+php ape import https://google.com
 ```
+
+- List news from their sources
+```php
+php ape news bbchausa
+```
+The currently supported sites are:
+<ul>
+<li>BBC Hausa</li>
+<li>VOA Hausa</li>
+<li>RFI Hausa</li>
+<li>DW Hausa</li>
+</ul>
 
 ## License
 
