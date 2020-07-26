@@ -37,6 +37,11 @@ php ape link:fzmovies "https://fzmovies.net/movie-The%20Forbidden%20Kingdom--hmp
 php ape link:feurl "https://feurl.com/v/zyvnx8yk8o1"
 ```
 
+- Extract download link from https://480mkv.com
+```php
+php ape link:femkvcom "https://480mkv.com/the-100-season-6-480p-hdtv-all-episodes/"
+```
+
 - Download remote file
 ```php
 php ape import https://google.com

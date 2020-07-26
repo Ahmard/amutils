@@ -5,12 +5,13 @@ use App\Utils\News\{
     BBCHausa,
     RFIHausa,
     DWHausa,
-    VOAHausa
+    VOAHausa,
+    AllSites
 };
 
 class News
 {
-    protected static array $methods = [
+    protected static $methods = [
         'bbchausa' => BBCHausa::class, 
         'rfihausa' => RFIHausa::class, 
         'dwhausa' => DWHausa::class,
@@ -20,8 +21,19 @@ class News
     
     public static function __callStatic($method, $arguments)
     {
+        //If we are fetching news from all sites
+        if($method == 'allSites'){
+            return new AllSites();
+        }
+        
         if(array_key_exists($method, static::$methods)){
             return new static::$methods[$method];
         }
+    }
+    
+    
+    public static function getSites()
+    {
+        return static::$methods;
     }
 }

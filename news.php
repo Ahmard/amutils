@@ -3,9 +3,12 @@ use App\Utils\News;
 
 require('vendor/autoload.php');
 
-$site = $_GET['site'] ?? 'bbchausa';
-
-$newsList = News::$site()->fetch()->getAll();
+$site = $_GET['site'] ?? null;
+if($site && $site != 'all'){
+    $newsList = News::$site()->fetch()->getAll();
+}else{
+    $newsList = News::allSites()->fetch();
+}
 
 header('Content-Type: application/json');
 

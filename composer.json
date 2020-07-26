@@ -17,7 +17,7 @@
     ],
     "require": {
         "php": "^7.2.5",
-        "ahmard/queliwrap": "^1.0",
+        "ahmard/queliwrap": "^2.0",
         "fabpot/goutte": "^4.0",
         "laravel-zero/framework": "^7.0"
     },

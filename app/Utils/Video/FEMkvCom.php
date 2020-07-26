@@ -26,9 +26,9 @@ class FEMkvCom
        // $url = 'http://localhost:8080/doliex/temp/1588608336.html';
         $this->url = $url;
         $this->request = Client::get($url);
-        if($this->request->error()){
-            $this->error = $this->request->getError();
-        }
+        $this->request->otherwise(function($error){
+            $this->error = $error->getError();
+        });
         
         return $this;
     }
@@ -37,22 +37,22 @@ class FEMkvCom
     public function episodes()
     {
         if($this->error == null){
-            $ql = $this->request->getQL();
-            $lists = $ql->find('#content')
-                ->find('ol')->eq(0)
-                ->find('li')
-                ->each(function($li){
-                    $a = $li->find('a');
-                    if($a->is('a')){
-                        $this->episodes[] = [
-                            'name' => explode(' – ', $li->text())[0],
-                            'href' => $a->attr('href'),
-                            'links' => $this->getEpisodeLinks($a->attr('href'))
-                        ];
-                    }
-                });
+            $this->request->then(function($ql){
+                $lists = $ql->find('#content')
+                    ->find('ol')->eq(0)
+                    ->find('li')
+                    ->each(function($li){
+                        $a = $li->find('a');
+                        if($a->is('a')){
+                            $this->episodes[] = [
+                                'name' => explode(' – ', $li->text())[0],
+                                'href' => $a->attr('href'),
+                                'links' => $this->getEpisodeLinks($a->attr('href'))
+                            ];
+                        }
+                    });
             
-            
+            });
         }
         
         return $this;
@@ -63,11 +63,10 @@ class FEMkvCom
     {
         //$href = 'http://localhost:8080/doliex/temp/1588609163.html';
         $request = Client::get($href);
-        if($request->success()){
+        $this->request->then(function($ql){
             $this->links = array();
             
-            $nodes = $request->getQL()
-                ->find('p > a')
+            $nodes = $ql->find('p > a')
                 ->each(function($node){
                     $this->links[] = [
                         'name' => $node->text(),
@@ -75,9 +74,8 @@ class FEMkvCom
                     ];
                 });
             
-            
             return $this->links;
-        }
+        });
     }
     
     
@@ -94,7 +92,7 @@ class FEMkvCom
             $html .= '<li>'.$episode['name'].'</li>';
             $html .= '<ul>';
             foreach ($episode['links'] as $link) {
-                $html .= '<li><a href="'.$link['href'].'">'.$link['name'].'</a></li>';
+                $html .= '<li><a href="'.$link['href'].'" target="_blank">'.$link['name'].'</a></li>';
             }
             $html .= '</ul>';
         }

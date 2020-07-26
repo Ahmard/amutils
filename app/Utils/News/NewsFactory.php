@@ -3,7 +3,7 @@ namespace App\Utils\News;
 
 class NewsFactory
 {
-    protected array $newsData;
+    protected $newsData;
     
     
     public function __construct(array $newsData)

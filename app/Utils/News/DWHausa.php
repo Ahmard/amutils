@@ -6,19 +6,23 @@ use Queliwrap\Client;
 
 class DWHausa extends NewsAbstract
 {
-    //protected string $websiteUrl = 'https://bbc.com/hausa';
-    protected string $websiteUrl = 'http://localhost:8080/amutils/storage/temp/dwhausa.html';
-
-    protected array $newsList = array();
+    protected $websiteUrl;
+    
+    protected $newsList = array();
 
     protected $error = null;
 
 
+    public function __construct()
+    {
+        $this->websiteUrl = 'https://m.dw.com/ha/';
+    }
+    
     public function fetch() : object
     {
         $client = Client::get($this->websiteUrl);
 
-        $client->success(function($ql) {
+        $client->then(function($ql) {
             //News
             $ql->find('.news')->each(function($div) {
                 //Link and Text
@@ -69,7 +73,7 @@ class DWHausa extends NewsAbstract
             });
         });
         
-        $client->error(function($err) {
+        $client->otherwise(function($err) {
             $this->error = $err;
         });
 

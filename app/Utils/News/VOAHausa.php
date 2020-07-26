@@ -6,18 +6,23 @@ use App\Struct\Abstracts\NewsAbstract;
 
 class VOAHausa extends NewsAbstract
 {
-    protected string $websiteUrl = 'http://localhost:8080/amutils/storage/temp/voahausa.html';
+    protected $websiteUrl;
     
-    protected array $newsList = array();
+    protected $newsList = array();
     
     protected $error = null;
     
-    
+
+    public function __construct()
+    {
+        $this->websiteUrl = 'https://www.voahausa.com/';
+    }
+        
     public function fetch() : object
     {
         $client = Client::get($this->websiteUrl);
         
-        $client->success(function($ql){
+        $client->then(function($ql){
             $ql->find('div.media-block__content')->each(function($li){
                 //Link and text
                 $a = $li->find('a');
@@ -35,7 +40,7 @@ class VOAHausa extends NewsAbstract
             });
         });
         
-        $client->error(function($err){
+        $client->otherwise(function($err){
             $this->error = $err;
         });
         

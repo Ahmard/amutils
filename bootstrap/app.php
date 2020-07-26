@@ -10,6 +10,7 @@
 | the IoC container for the system binding all of the various parts.
 |
 */
+class_alias('Illuminate\Support\Facades\Config', 'Config');
 
 $app = new LaravelZero\Framework\Application(
     dirname(__DIR__)

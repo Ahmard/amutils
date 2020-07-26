@@ -6,19 +6,23 @@ use Queliwrap\Client;
 
 class RFIHausa extends NewsAbstract
 {
-    //protected string $websiteUrl = 'https://bbc.com/hausa';
-    protected string $websiteUrl = 'http://localhost:8080/amutils/storage/temp/rfihausa.html';
+    protected $websiteUrl;
     
-    protected array $newsList = array();
+    protected $newsList = array();
     
     protected $error = null;
     
+    
+    public function __construct()
+    {
+        $this->websiteUrl = 'http://www.rfi.fr/ha/';
+    }
     
     public function fetch() : object
     {
         $client = Client::get($this->websiteUrl);
         
-        $client->success(function($ql){
+        $client->then(function($ql){
             $ql->find('.m-item-list-article')->each(function($div){
                 $this->newsList[] = [
                     'text' => $div->find('p:eq(0)')->text(),
@@ -27,7 +31,7 @@ class RFIHausa extends NewsAbstract
             });
         });
         
-        $client->error(function($err){
+        $client->otherwise(function($err){
             $this->error = $err;
         });
         
