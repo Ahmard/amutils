@@ -5,6 +5,8 @@ namespace App\Commands;
 use Illuminate\Console\Scheduling\Schedule;
 use LaravelZero\Framework\Commands\Command;
 use App\Utils\Video\FEMkvCom;
+use App\Utils\Video\FEMkvCom\Saver;
+use App\Utils\Video\FEMkvCom\Main;
 
 class FEMkvComCommand extends Command
 {
@@ -13,10 +15,11 @@ class FEMkvComCommand extends Command
      *
      * @var string
      */
+
     protected $signature = 'link:femkvcom {url}';
 
     /**
-     * The description of the command.
+     * The description of tnd.
      *
      * @var string
      */
@@ -30,11 +33,12 @@ class FEMkvComCommand extends Command
     public function handle()
     {
         $url = $this->argument('url');
-        $fileLoc = $this->ask('Enter file loc to save links to');
-        
-        FEMkvCom::from($url)
-            ->episodes()
-            ->save($fileLoc);
+        $fileLoc = $this->ask('Enter file loc to save links to') ?? 'storage/temp';
+
+        (new Main($url))->get(function ($episodes) use ($fileLoc){
+            $this->info('Link extraction finished.');
+        })->save($fileLoc);
+
     }
 
     /**
