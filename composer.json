@@ -19,7 +19,6 @@
         "php": "^7.4",
         "ext-json": "*",
         "ahmard/queliwrap": "^2.0",
-        "ahmard/simple-promise": "^1.0",
         "fabpot/goutte": "^4.0",
         "laravel-zero/framework": "^7.0"
     },
