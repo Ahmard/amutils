@@ -4,9 +4,9 @@ namespace App\Commands;
 
 use Illuminate\Console\Scheduling\Schedule;
 use LaravelZero\Framework\Commands\Command;
-use App\Utils\Video\FEMkvCom;
-use App\Utils\Video\FEMkvCom\Saver;
-use App\Utils\Video\FEMkvCom\Main;
+use Uticlass\Video\FEMkvCom;
+use Uticlass\Video\FEMkvCom\Saver;
+use Uticlass\Video\FEMkvCom\Main;
 
 class FEMkvComCommand extends Command
 {

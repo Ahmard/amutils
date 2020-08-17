@@ -4,7 +4,7 @@ namespace App\Commands;
 
 use Illuminate\Console\Scheduling\Schedule;
 use LaravelZero\Framework\Commands\Command;
-use App\Utils\Others\ZippyShare;
+use Uticlass\Others\ZippyShare;
 use App\Intents;
 
 class ZippyShareCommand extends Command

@@ -4,7 +4,7 @@ namespace App\Commands;
 
 use Illuminate\Console\Scheduling\Schedule;
 use LaravelZero\Framework\Commands\Command;
-use App\Utils\Muzmo;
+use Uticlass\Muzmo;
 
 class MuzmoCommand extends Command
 {

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "70e838d3d6abc23dec72f452245d7c25",
+    "content-hash": "e290664d16366659bff9009092592455",
     "packages": [
         {
             "name": "ahmard/guzwrap",
@@ -97,6 +97,44 @@
             ],
             "description": "A simple PHP promise library that works synchronously.",
             "time": "2020-07-26T17:44:08+00:00"
+        },
+        {
+            "name": "ahmard/uticlass",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Ahmard/uticlass.git",
+                "reference": "42c42ff060c452843e01c3af0b58973de1aac56a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Ahmard/uticlass/zipball/42c42ff060c452843e01c3af0b58973de1aac56a",
+                "reference": "42c42ff060c452843e01c3af0b58973de1aac56a",
+                "shasum": ""
+            },
+            "require": {
+                "ahmard/queliwrap": "^2.0",
+                "ext-json": "*",
+                "fabpot/goutte": "^4.0",
+                "php": "^7.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Uticlass\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ahmard"
+                }
+            ],
+            "description": "Pieces of classes jam-packed to ease day-too-day life :)",
+            "time": "2020-08-17T15:29:19+00:00"
         },
         {
             "name": "cache/adapter-common",

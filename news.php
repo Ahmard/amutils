@@ -1,5 +1,5 @@
 <?php
-use App\Utils\News;
+use Uticlass\News;
 
 require('vendor/autoload.php');
 

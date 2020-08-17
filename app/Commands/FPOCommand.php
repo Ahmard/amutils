@@ -4,7 +4,7 @@ namespace App\Commands;
 
 use Illuminate\Console\Scheduling\Schedule;
 use LaravelZero\Framework\Commands\Command;
-use App\Utils\Video\FPO;
+use Uticlass\Video\FPO;
 
 class FPOCommand extends Command
 {

@@ -11,15 +11,13 @@
     },
     "authors": [
         {
-            "name": "Nuno Maduro",
-            "email": "enunomaduro@gmail.com"
+            "name": "Ahmard"
         }
     ],
     "require": {
         "php": "^7.4",
         "ext-json": "*",
-        "ahmard/queliwrap": "^2.0",
-        "fabpot/goutte": "^4.0",
+        "ahmard/uticlass": "^1.0",
         "laravel-zero/framework": "^7.0"
     },
     "require-dev": {

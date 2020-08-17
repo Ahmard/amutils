@@ -4,7 +4,7 @@ namespace App\Commands;
 
 use Illuminate\Console\Scheduling\Schedule;
 use LaravelZero\Framework\Commands\Command;
-use App\Utils\Video\FZMovies;
+use Uticlass\Video\FZMovies;
 use App\Intents;
 
 class FZMoviesCommand extends Command

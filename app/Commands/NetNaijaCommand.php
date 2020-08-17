@@ -4,7 +4,7 @@ namespace App\Commands;
 
 use Illuminate\Console\Scheduling\Schedule;
 use LaravelZero\Framework\Commands\Command;
-use App\Utils\Video\NetNaija;
+use Uticlass\Video\NetNaija;
 use App\Intents;
 
 class NetNaijaCommand extends Command
