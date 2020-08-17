@@ -42,6 +42,11 @@ php ape link:feurl "https://feurl.com/v/zyvnx8yk8o1"
 php ape link:femkvcom "https://480mkv.com/the-100-season-6-480p-hdtv-all-episodes/"
 ```
 
+- Extract download link from https://netnaija.com
+```php
+php ape link:netnaija "https://www.thenetnaija.com/videos/movies/6128-the-beyond-2017"
+```
+
 - Download remote file
 ```php
 php ape import https://google.com
