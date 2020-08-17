@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e14b50563800b0b0cdfc87543bb90059",
+    "content-hash": "70e838d3d6abc23dec72f452245d7c25",
     "packages": [
         {
             "name": "ahmard/guzwrap",
@@ -38,20 +38,21 @@
         },
         {
             "name": "ahmard/queliwrap",
-            "version": "2.0.0",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Ahmard/queliwrap.git",
-                "reference": "848d2531ca06dac913cc58866719a30e67b5ff94"
+                "reference": "4dd7e36e94fd532e6f6aa4d4e9ed791ce8324f30"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Ahmard/queliwrap/zipball/848d2531ca06dac913cc58866719a30e67b5ff94",
-                "reference": "848d2531ca06dac913cc58866719a30e67b5ff94",
+                "url": "https://api.github.com/repos/Ahmard/queliwrap/zipball/4dd7e36e94fd532e6f6aa4d4e9ed791ce8324f30",
+                "reference": "4dd7e36e94fd532e6f6aa4d4e9ed791ce8324f30",
                 "shasum": ""
             },
             "require": {
-                "ahmard/guzwrap": "^1.0.0",
+                "ahmard/guzwrap": "^1.0",
+                "ahmard/simple-promise": "^1.0",
                 "jaeger/querylist": "^4.2"
             },
             "type": "library",
@@ -65,7 +66,7 @@
                 "MIT"
             ],
             "description": "QueryList PHP web scrapper wrapper.",
-            "time": "2020-07-06T18:01:39+00:00"
+            "time": "2020-07-27T08:47:38+00:00"
         },
         {
             "name": "ahmard/simple-promise",
@@ -783,7 +784,7 @@
         },
         {
             "name": "illuminate/cache",
-            "version": "v7.21.0",
+            "version": "v7.25.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/cache.git",
@@ -834,7 +835,7 @@
         },
         {
             "name": "illuminate/config",
-            "version": "v7.21.0",
+            "version": "v7.25.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/config.git",
@@ -878,7 +879,7 @@
         },
         {
             "name": "illuminate/console",
-            "version": "v7.21.0",
+            "version": "v7.25.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/console.git",
@@ -932,16 +933,16 @@
         },
         {
             "name": "illuminate/container",
-            "version": "v7.21.0",
+            "version": "v7.25.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/container.git",
-                "reference": "8fbbfd2df2b0850a7cb1240506aa77f3d150f136"
+                "reference": "42d4242eaad399ec63aea39ea5976f342a799411"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/container/zipball/8fbbfd2df2b0850a7cb1240506aa77f3d150f136",
-                "reference": "8fbbfd2df2b0850a7cb1240506aa77f3d150f136",
+                "url": "https://api.github.com/repos/illuminate/container/zipball/42d4242eaad399ec63aea39ea5976f342a799411",
+                "reference": "42d4242eaad399ec63aea39ea5976f342a799411",
                 "shasum": ""
             },
             "require": {
@@ -975,11 +976,11 @@
             ],
             "description": "The Illuminate Container package.",
             "homepage": "https://laravel.com",
-            "time": "2020-07-14T13:09:48+00:00"
+            "time": "2020-07-14T17:13:26+00:00"
         },
         {
             "name": "illuminate/contracts",
-            "version": "v7.21.0",
+            "version": "v7.25.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -1023,7 +1024,7 @@
         },
         {
             "name": "illuminate/events",
-            "version": "v7.21.0",
+            "version": "v7.25.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/events.git",
@@ -1068,16 +1069,16 @@
         },
         {
             "name": "illuminate/filesystem",
-            "version": "v7.21.0",
+            "version": "v7.25.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/filesystem.git",
-                "reference": "73082c13a2e544c80f55b669a781e01d0627eaab"
+                "reference": "d5d7739e23a760b0fa56f64c0f7382a72e8ee86a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/filesystem/zipball/73082c13a2e544c80f55b669a781e01d0627eaab",
-                "reference": "73082c13a2e544c80f55b669a781e01d0627eaab",
+                "url": "https://api.github.com/repos/illuminate/filesystem/zipball/d5d7739e23a760b0fa56f64c0f7382a72e8ee86a",
+                "reference": "d5d7739e23a760b0fa56f64c0f7382a72e8ee86a",
                 "shasum": ""
             },
             "require": {
@@ -1119,20 +1120,20 @@
             ],
             "description": "The Illuminate Filesystem package.",
             "homepage": "https://laravel.com",
-            "time": "2020-07-21T13:53:52+00:00"
+            "time": "2020-07-24T09:17:00+00:00"
         },
         {
             "name": "illuminate/support",
-            "version": "v7.21.0",
+            "version": "v7.25.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "79bbfdf2cd58a3ca2daa015e523a8e0351cccd01"
+                "reference": "9b0c0af8d2dd1a729f6337d0ed5c81a241ea43ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/79bbfdf2cd58a3ca2daa015e523a8e0351cccd01",
-                "reference": "79bbfdf2cd58a3ca2daa015e523a8e0351cccd01",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/9b0c0af8d2dd1a729f6337d0ed5c81a241ea43ab",
+                "reference": "9b0c0af8d2dd1a729f6337d0ed5c81a241ea43ab",
                 "shasum": ""
             },
             "require": {
@@ -1181,20 +1182,20 @@
             ],
             "description": "The Illuminate Support package.",
             "homepage": "https://laravel.com",
-            "time": "2020-07-17T14:27:04+00:00"
+            "time": "2020-08-10T13:58:23+00:00"
         },
         {
             "name": "illuminate/testing",
-            "version": "v7.21.0",
+            "version": "v7.25.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/testing.git",
-                "reference": "3a7b3cbcf8ee96e9d5ca0d7cd3f991f8d375b2e4"
+                "reference": "1093b01e25316811463c42db1488d899c74ef461"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/testing/zipball/3a7b3cbcf8ee96e9d5ca0d7cd3f991f8d375b2e4",
-                "reference": "3a7b3cbcf8ee96e9d5ca0d7cd3f991f8d375b2e4",
+                "url": "https://api.github.com/repos/illuminate/testing/zipball/1093b01e25316811463c42db1488d899c74ef461",
+                "reference": "1093b01e25316811463c42db1488d899c74ef461",
                 "shasum": ""
             },
             "require": {
@@ -1233,7 +1234,7 @@
             ],
             "description": "The Illuminate Testing package.",
             "homepage": "https://laravel.com",
-            "time": "2020-07-17T13:18:51+00:00"
+            "time": "2020-07-27T18:25:06+00:00"
         },
         {
             "name": "jaeger/g-http",
@@ -1430,16 +1431,16 @@
         },
         {
             "name": "laravel-zero/foundation",
-            "version": "v7.21.0",
+            "version": "v7.24.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel-zero/foundation.git",
-                "reference": "dc07ab72a9d774a0be6abe57e61d54fe48048cc8"
+                "reference": "08dffa3f6ba714fb42feb4137f09c23b2f60c4d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel-zero/foundation/zipball/dc07ab72a9d774a0be6abe57e61d54fe48048cc8",
-                "reference": "dc07ab72a9d774a0be6abe57e61d54fe48048cc8",
+                "url": "https://api.github.com/repos/laravel-zero/foundation/zipball/08dffa3f6ba714fb42feb4137f09c23b2f60c4d4",
+                "reference": "08dffa3f6ba714fb42feb4137f09c23b2f60c4d4",
                 "shasum": ""
             },
             "require": {
@@ -1468,7 +1469,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2020-07-21T15:13:23+00:00"
+            "time": "2020-08-09T15:00:47+00:00"
         },
         {
             "name": "laravel-zero/framework",
@@ -1558,28 +1559,29 @@
         },
         {
             "name": "league/flysystem",
-            "version": "1.0.70",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "585824702f534f8d3cf7fab7225e8466cc4b7493"
+                "reference": "6e96f54d82e71f71c4108da33ee96a7f57083710"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/585824702f534f8d3cf7fab7225e8466cc4b7493",
-                "reference": "585824702f534f8d3cf7fab7225e8466cc4b7493",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/6e96f54d82e71f71c4108da33ee96a7f57083710",
+                "reference": "6e96f54d82e71f71c4108da33ee96a7f57083710",
                 "shasum": ""
             },
             "require": {
                 "ext-fileinfo": "*",
-                "php": ">=5.5.9"
+                "league/mime-type-detection": "^1.3",
+                "php": "^7.2.5 || ^8.0"
             },
             "conflict": {
                 "league/flysystem-sftp": "<1.0.6"
             },
             "require-dev": {
-                "phpspec/phpspec": "^3.4 || ^4.0 || ^5.0 || ^6.0",
-                "phpunit/phpunit": "^5.7.26"
+                "phpspec/prophecy": "^1.11.1",
+                "phpunit/phpunit": "^8.5.8"
             },
             "suggest": {
                 "ext-fileinfo": "Required for MimeType",
@@ -1644,20 +1646,71 @@
                     "type": "other"
                 }
             ],
-            "time": "2020-07-26T07:20:36+00:00"
+            "time": "2020-08-12T14:23:41+00:00"
         },
         {
-            "name": "nesbot/carbon",
-            "version": "2.36.1",
+            "name": "league/mime-type-detection",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "ee7378a36cc62952100e718bcc58be4c7210e55f"
+                "url": "https://github.com/thephpleague/mime-type-detection.git",
+                "reference": "fda190b62b962d96a069fcc414d781db66d65b69"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/ee7378a36cc62952100e718bcc58be4c7210e55f",
-                "reference": "ee7378a36cc62952100e718bcc58be4c7210e55f",
+                "url": "https://api.github.com/repos/thephpleague/mime-type-detection/zipball/fda190b62b962d96a069fcc414d781db66d65b69",
+                "reference": "fda190b62b962d96a069fcc414d781db66d65b69",
+                "shasum": ""
+            },
+            "require": {
+                "ext-fileinfo": "*",
+                "php": "^7.2 || ^8.0"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^0.12.36",
+                "phpunit/phpunit": "^8.5.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "League\\MimeTypeDetection\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Frank de Jonge",
+                    "email": "info@frankdejonge.nl"
+                }
+            ],
+            "description": "Mime-type detection for Flysystem",
+            "funding": [
+                {
+                    "url": "https://github.com/frankdejonge",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/league/flysystem",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-08-09T10:34:01+00:00"
+        },
+        {
+            "name": "nesbot/carbon",
+            "version": "2.38.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/briannesbitt/Carbon.git",
+                "reference": "d8f6a6a91d1eb9304527b040500f61923e97674b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/d8f6a6a91d1eb9304527b040500f61923e97674b",
+                "reference": "d8f6a6a91d1eb9304527b040500f61923e97674b",
                 "shasum": ""
             },
             "require": {
@@ -1672,7 +1725,7 @@
                 "kylekatarnls/multi-tester": "^2.0",
                 "phpmd/phpmd": "^2.8",
                 "phpstan/extension-installer": "^1.0",
-                "phpstan/phpstan": "^0.12.30",
+                "phpstan/phpstan": "^0.12.35",
                 "phpunit/phpunit": "^7.5 || ^8.0",
                 "squizlabs/php_codesniffer": "^3.4"
             },
@@ -1733,7 +1786,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-07-04T12:29:56+00:00"
+            "time": "2020-08-04T19:12:46+00:00"
         },
         {
             "name": "nunomaduro/collision",
@@ -3158,7 +3211,7 @@
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "v1.18.0",
+            "version": "v1.18.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
@@ -3234,7 +3287,7 @@
         },
         {
             "name": "symfony/polyfill-intl-grapheme",
-            "version": "v1.18.0",
+            "version": "v1.18.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-intl-grapheme.git",
@@ -3312,16 +3365,16 @@
         },
         {
             "name": "symfony/polyfill-intl-idn",
-            "version": "v1.18.0",
+            "version": "v1.18.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-intl-idn.git",
-                "reference": "bc6549d068d0160e0f10f7a5a23c7d1406b95ebe"
+                "reference": "5dcab1bc7146cf8c1beaa4502a3d9be344334251"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-intl-idn/zipball/bc6549d068d0160e0f10f7a5a23c7d1406b95ebe",
-                "reference": "bc6549d068d0160e0f10f7a5a23c7d1406b95ebe",
+                "url": "https://api.github.com/repos/symfony/polyfill-intl-idn/zipball/5dcab1bc7146cf8c1beaa4502a3d9be344334251",
+                "reference": "5dcab1bc7146cf8c1beaa4502a3d9be344334251",
                 "shasum": ""
             },
             "require": {
@@ -3393,11 +3446,11 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-07-14T12:35:20+00:00"
+            "time": "2020-08-04T06:02:08+00:00"
         },
         {
             "name": "symfony/polyfill-intl-normalizer",
-            "version": "v1.18.0",
+            "version": "v1.18.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-intl-normalizer.git",
@@ -3478,7 +3531,7 @@
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.18.0",
+            "version": "v1.18.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
@@ -3555,7 +3608,7 @@
         },
         {
             "name": "symfony/polyfill-php70",
-            "version": "v1.18.0",
+            "version": "v1.18.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php70.git",
@@ -3632,7 +3685,7 @@
         },
         {
             "name": "symfony/polyfill-php72",
-            "version": "v1.18.0",
+            "version": "v1.18.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php72.git",
@@ -3705,7 +3758,7 @@
         },
         {
             "name": "symfony/polyfill-php73",
-            "version": "v1.18.0",
+            "version": "v1.18.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php73.git",
@@ -3781,7 +3834,7 @@
         },
         {
             "name": "symfony/polyfill-php80",
-            "version": "v1.18.0",
+            "version": "v1.18.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php80.git",
@@ -4656,16 +4709,16 @@
         },
         {
             "name": "mockery/mockery",
-            "version": "1.4.1",
+            "version": "1.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mockery/mockery.git",
-                "reference": "1404386ca3410b04fe58b9517e85d702ab33b2c6"
+                "reference": "20cab678faed06fac225193be281ea0fddb43b93"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mockery/mockery/zipball/1404386ca3410b04fe58b9517e85d702ab33b2c6",
-                "reference": "1404386ca3410b04fe58b9517e85d702ab33b2c6",
+                "url": "https://api.github.com/repos/mockery/mockery/zipball/20cab678faed06fac225193be281ea0fddb43b93",
+                "reference": "20cab678faed06fac225193be281ea0fddb43b93",
                 "shasum": ""
             },
             "require": {
@@ -4677,7 +4730,7 @@
                 "phpunit/phpunit": "<8.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^8.5 || ^9.0"
+                "phpunit/phpunit": "^8.5 || ^9.3"
             },
             "type": "library",
             "extra": {
@@ -4720,7 +4773,7 @@
                 "test double",
                 "testing"
             ],
-            "time": "2020-07-09T08:31:54+00:00"
+            "time": "2020-08-11T18:10:13+00:00"
         },
         {
             "name": "myclabs/deep-copy",
@@ -4929,16 +4982,16 @@
         },
         {
             "name": "phpdocumentor/reflection-docblock",
-            "version": "5.2.0",
+            "version": "5.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-                "reference": "3170448f5769fe19f456173d833734e0ff1b84df"
+                "reference": "d870572532cd70bc3fab58f2e23ad423c8404c44"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/3170448f5769fe19f456173d833734e0ff1b84df",
-                "reference": "3170448f5769fe19f456173d833734e0ff1b84df",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/d870572532cd70bc3fab58f2e23ad423c8404c44",
+                "reference": "d870572532cd70bc3fab58f2e23ad423c8404c44",
                 "shasum": ""
             },
             "require": {
@@ -4977,7 +5030,7 @@
                 }
             ],
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
-            "time": "2020-07-20T20:05:34+00:00"
+            "time": "2020-08-15T11:14:08+00:00"
         },
         {
             "name": "phpdocumentor/type-resolver",
@@ -5337,6 +5390,7 @@
             "keywords": [
                 "tokenizer"
             ],
+            "abandoned": true,
             "time": "2019-09-17T06:23:10+00:00"
         },
         {
