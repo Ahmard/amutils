@@ -64,6 +64,11 @@ The currently supported sites are:
 <li>DW Hausa</li>
 </ul>
 
+## References
+- [Queliwrap](https://github.com/ahmard/queliwrap)
+- [Guzwrap](https://github.com/ahmard/guzwrap)
+- [Uticlass](https://github.com/ahmard/uticlass)
+
 ## License
 
 Use it however you seem fit.
