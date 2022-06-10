@@ -33,11 +33,11 @@ class FZMoviesCommand extends Command
      */
     public function handle()
     {
-        $format = $this->option('format') ?? 'mp4';
+        $format = $this->option('format') ?? 1;
         $app = $this->option('app') ?? 'IDM';
         console()->comment('Extracting download link...');
         $downloadUrl = (new FZMovies($this->argument('url')))->get($format);
-        
+
         console()->info('Download link extracted.');
         console()->question($downloadUrl)->newLine();
         Intents::call($app, $downloadUrl);
